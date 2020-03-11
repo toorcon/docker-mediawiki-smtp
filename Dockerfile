@@ -11,7 +11,3 @@ RUN pear install mail
 # install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# install semantic
-RUN composer require "mediawiki/semantic-media-wiki:~3.1.4"
-RUN composer update --no-dev
-
